@@ -1,24 +1,25 @@
 //missing number in array
 
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-    int arr[100],i,j,k,sum=0,t=0,miss;
+    int arr[100], i, j, k, sum = 0, t = 0, miss;
     printf("Enter the arr value\n");
-    for(i=0;i<5;i++)
+    for (i = 1; i < 10; i++)
     {
-        scanf("%d",&arr[i]);
+        scanf("%d", &arr[i]);
     }
-    for(j=0;j<5;j++)
+    for (j = 1; j < 10; j++)
     {
-        sum=sum+arr[j];
+        sum = sum + arr[j];
     }
-    for(k=1;k<=5;k++)
+    for (k = 1; k <= 10; k++)
     {
-        t=t+k;
+        t = t + k;
     }
-    printf("value of t is %d\n",t);
-    miss=sum-t;
-    printf("Missing number is %d - \n",miss);
+    printf("value of t is %d\n", t);
+    printf("value of sum is %d\n", sum);
+    miss = t - sum;
+    printf("Missing number is %d\n", miss);
     return 0;
 }

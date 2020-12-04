@@ -5,7 +5,7 @@ int main()
 	scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		printf("%d \n",t1);
+		printf("fib -%d \n",t1);
 		tn=t1+t2;
 		t1=t2;
 		t2=tn;
